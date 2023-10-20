@@ -9,7 +9,7 @@ To implement 4 bit up and down counters and validate  functionality.
 PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:  
 Quartus prime
-### THEORY 
+### THEORY:
 
 ## UP COUNTER 
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
@@ -43,7 +43,7 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 ![image](https://user-images.githubusercontent.com/36288975/169644844-1a14e123-7228-4ed8-81a9-eb937dff4ac8.png)
 
 4-bit Count Down Counter
-### Procedure
+### PROCEDURE:
 1. Create a New Project:
    - Open Quartus and create a new project by selecting "File" > "New Project Wizard."
    - Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
@@ -89,26 +89,37 @@ begin
 end
 endmodule
 ```
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-#### UPCOUNTER
+#### DOWNCOUNTER:
+```
+module dc(A,B,C,D,CLK);
+input CLK;
+output reg A,B,C,D;
+always@(posedge CLK)
+begin
+	A=(((~B)&(~C)&(~D))^A);
+	B=(((~C)&(~D))^B);
+	C=((~D)^(C));
+	D=1^(D);
+end
+endmodule
+```
+### RTL DIAGRAM:
+#### UPCOUNTER:
 ![ucrtl](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/dd9afaa1-2e84-4d37-8124-ea0f0ef1d737)
-#### DOWNCOUNTER
+#### DOWNCOUNTER:
 ![dcrtl](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/adcd5eee-d6ef-4c10-b1e6-e5529cb91998)
 
-### TRUTH TABLE   
-#### UPCOUNTER
+### TRUTH TABLE:   
+#### UPCOUNTER:
 ![UCTT](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/df21a60e-84c3-49ce-b090-a4dfa77c604b)
-#### DOWNCOUNTER
+#### DOWNCOUNTER:
+![dctt](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/ca242e57-6926-4b22-8093-f98406ea1ec2)
 
-
-
-
-### OUTPUT WAVEFORMS
-#### UPCOUNTER
+### OUTPUT WAVEFORM:
+#### UPCOUNTER:
 ![ucwvf](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/a7788bd9-db3a-4039-98ed-737a2c332e3f)
-#### DOWNCOUNTER
+#### DOWNCOUNTER:
 ![dcwvf](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/89210b2a-3f07-4230-97b2-4cc54c7a611d)
 
-
-### RESULTS 
+### RESULT: 
+Thus Synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
