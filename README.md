@@ -93,13 +93,13 @@ endmodule
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
 #### UPCOUNTER
 ![ucrtl](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/dd9afaa1-2e84-4d37-8124-ea0f0ef1d737)
-
-
-
+#### DOWNCOUNTER
+![dcrtl](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/adcd5eee-d6ef-4c10-b1e6-e5529cb91998)
 
 ### TRUTH TABLE   
 #### UPCOUNTER
 ![UCTT](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/df21a60e-84c3-49ce-b090-a4dfa77c604b)
+#### DOWNCOUNTER
 
 
 
@@ -107,8 +107,8 @@ endmodule
 ### OUTPUT WAVEFORMS
 #### UPCOUNTER
 ![ucwvf](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/a7788bd9-db3a-4039-98ed-737a2c332e3f)
-
-
+#### DOWNCOUNTER
+![dcwvf](https://github.com/JananiSoundararajan/Exp-7-Synchornous-counters-/assets/119477549/89210b2a-3f07-4230-97b2-4cc54c7a611d)
 
 
 ### RESULTS 
